@@ -1,3 +1,4 @@
+import { observer } from "@legendapp/state/react";
 import AndorraFlag from "~/assets/flags/ad.webp";
 import UnitedArabEmiratesFlag from "~/assets/flags/ae.webp";
 import AfghanistanFlag from "~/assets/flags/af.webp";
@@ -253,6 +254,7 @@ import SouthAfricaFlag from "~/assets/flags/za.webp";
 import ZambiaFlag from "~/assets/flags/zm.webp";
 import ZimbabweFlag from "~/assets/flags/zw.webp";
 import React from "react";
+import { language$ } from "../main.tsx";
 
 type FlagArray = {
   name: string;
@@ -727,7 +729,7 @@ const flags: FlagArray = [
 
 export const flagLength = flags.length;
 
-export function AllFlags() {
+export const AllFlags = observer(() => {
   const [count, setCount] = React.useState(0);
 
   const chosenFlags = getRandomFlags(flags, 4);
@@ -778,29 +780,41 @@ export function AllFlags() {
       <div className="grid grid-cols-2 grid-rows-2 gap-4">
         <button
           onClick={() => handleButtonClick(0)}
-          className="bg-slate-200 w-32 rounded shadow-2xl h-20"
+          className="bg-slate-200 w-36 rounded shadow-2xl h-20"
         >
-          1 {chosenFlags[0].name}
+          1{" "}
+          {language$.get() === "english"
+            ? chosenFlags[0].name
+            : chosenFlags[0].germanName}
         </button>
         <button
           onClick={() => handleButtonClick(1)}
-          className="bg-slate-200 w-32 rounded shadow-2xl h-20"
+          className="bg-slate-200 w-36 rounded shadow-2xl h-20"
         >
-          2 {chosenFlags[1].name}
+          2{" "}
+          {language$.get() === "english"
+            ? chosenFlags[1].name
+            : chosenFlags[1].germanName}
         </button>
         <button
           onClick={() => handleButtonClick(2)}
-          className="bg-slate-200 w-32 rounded shadow-2xl h-20"
+          className="bg-slate-200 w-36 rounded shadow-2xl h-20"
         >
-          3 {chosenFlags[2].name}
+          3{" "}
+          {language$.get() === "english"
+            ? chosenFlags[2].name
+            : chosenFlags[2].germanName}
         </button>
         <button
           onClick={() => handleButtonClick(3)}
-          className="bg-slate-200 w-32 rounded shadow-2xl h-20"
+          className="bg-slate-200 w-36 rounded shadow-2xl h-20"
         >
-          4 {chosenFlags[3].name}
+          4{" "}
+          {language$.get() === "english"
+            ? chosenFlags[3].name
+            : chosenFlags[3].germanName}
         </button>
       </div>
     </div>
   );
-}
+});

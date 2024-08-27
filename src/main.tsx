@@ -1,23 +1,37 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Root } from "./routes/root.tsx";
 import { AllFlags } from "./routes/all-flags.tsx";
+import { observable } from "@legendapp/state";
+import { configureObservableSync, syncObservable } from "@legendapp/state/sync";
+import { ObservablePersistLocalStorage } from "@legendapp/state/persist-plugins/local-storage";
+import { Layout } from "./routes/layout.tsx";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
+configureObservableSync({
+  persist: {
+    plugin: ObservablePersistLocalStorage,
   },
-  {
-    path: "/all-flags",
-    element: <AllFlags />,
+});
+
+export const language$ = observable<"english" | "german">("english");
+
+syncObservable(language$, {
+  persist: {
+    name: "language",
   },
-]);
+});
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Root />} />
+          <Route path="/all-flags" element={<AllFlags />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </StrictMode>,
 );
