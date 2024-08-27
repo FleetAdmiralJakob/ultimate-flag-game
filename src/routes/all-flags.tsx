@@ -767,7 +767,7 @@ export const AllFlags = observer(() => {
   return (
     <div className="flex flex-col gap-10 w-full h-screen items-center justify-center">
       {count}
-      <div className="w-72 bg-gray-200 rounded-full h-4">
+      <div className="w-72 bg-gray-200 rounded-full h-4 overflow-hidden">
         <div
           className="bg-blue-600 h-4 rounded-full"
           style={{ width: `${progress}%` }}
