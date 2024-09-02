@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@legendapp/state':
-        specifier: 3.0.0-alpha.32
-        version: 3.0.0-alpha.32(react@18.3.1)
+        specifier: 3.0.0-alpha.33
+        version: 3.0.0-alpha.33(react@18.3.1)
       '@types/node':
         specifier: ^22.5.0
         version: 22.5.1
@@ -273,8 +273,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@legendapp/state@3.0.0-alpha.32':
-    resolution: {integrity: sha512-BBWxXk4csoJTC6O8AdGXK6oQh2zgdyQaLZCBKhvbNNq32pmsyL8sCK7buPPNLmTiClJuHUdT0xUpx98EfyaIIA==}
+  '@legendapp/state@3.0.0-alpha.33':
+    resolution: {integrity: sha512-ZECPGyYrgvSxjEtqmOMLaXC62z911j1XDfQtOcsUiARxpUBiXHNRSCX+mAr8Q4mbnMJsegmSVE60jzQ2Q9HYYA==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1446,7 +1446,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@legendapp/state@3.0.0-alpha.32(react@18.3.1)':
+  '@legendapp/state@3.0.0-alpha.33(react@18.3.1)':
     dependencies:
       use-sync-external-store: 1.2.2(react@18.3.1)
     transitivePeerDependencies:
