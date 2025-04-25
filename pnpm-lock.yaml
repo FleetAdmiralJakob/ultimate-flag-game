@@ -13,7 +13,7 @@ importers:
         version: 3.0.0-beta.30(react@19.1.0)
       '@types/node':
         specifier: ^22.5.0
-        version: 22.14.1
+        version: 22.15.2
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -25,7 +25,7 @@ importers:
         version: 19.1.0(react@19.1.0)
       react-router-dom:
         specifier: ^7.0.0
-        version: 7.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        version: 7.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@eslint/js':
         specifier: ^9.9.0
@@ -38,7 +38,7 @@ importers:
         version: 19.1.2(@types/react@19.1.2)
       '@vitejs/plugin-react-swc':
         specifier: ^3.5.0
-        version: 3.9.0(vite@6.3.2(@types/node@22.14.1)(jiti@1.21.7)(yaml@2.6.1))
+        version: 3.9.0(vite@6.3.3(@types/node@22.15.2)(jiti@1.21.7)(yaml@2.6.1))
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.21(postcss@8.5.3)
@@ -71,7 +71,7 @@ importers:
         version: 8.31.0(eslint@9.25.1(jiti@1.21.7))(typescript@5.8.3)
       vite:
         specifier: ^6.0.0
-        version: 6.3.2(@types/node@22.14.1)(jiti@1.21.7)(yaml@2.6.1)
+        version: 6.3.3(@types/node@22.15.2)(jiti@1.21.7)(yaml@2.6.1)
 
 packages:
 
@@ -619,8 +619,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@22.14.1':
-    resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
+  '@types/node@22.15.2':
+    resolution: {integrity: sha512-uKXqKN9beGoMdBfcaTY1ecwz6ctxuJAcUlwE55938g0ZJ8lRxwAZqRz2AJ4pzpt5dHdTPMB863UZ0ESiFUcP7A==}
 
   '@types/react-dom@19.1.2':
     resolution: {integrity: sha512-XGJkWF41Qq305SKWEILa1O8vzhb3aOo3ogBlSmiqNko/WmRb6QIaweuZCXjKygVDXpzXb5wyxKTSOsmkuqj+Qw==}
@@ -1279,15 +1279,15 @@ packages:
     peerDependencies:
       react: ^19.1.0
 
-  react-router-dom@7.5.1:
-    resolution: {integrity: sha512-5DPSPc7ENrt2tlKPq0FtpG80ZbqA9aIKEyqX6hSNJDlol/tr6iqCK4crqdsusmOSSotq6zDsn0y3urX9TuTNmA==}
+  react-router-dom@7.5.2:
+    resolution: {integrity: sha512-yk1XW8Fj7gK7flpYBXF3yzd2NbX6P7Kxjvs2b5nu1M04rb5pg/Zc4fGdBNTeT4eDYL2bvzWNyKaIMJX/RKHTTg==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
 
-  react-router@7.5.1:
-    resolution: {integrity: sha512-/jjU3fcYNd2bwz9Q0xt5TwyiyoO8XjSEFXJY4O/lMAlkGTHWuHRAbR9Etik+lSDqMC7A7mz3UlXzgYT6Vl58sA==}
+  react-router@7.5.2:
+    resolution: {integrity: sha512-9Rw8r199klMnlGZ8VAsV/I8WrIF6IyJ90JQUdboupx1cdkgYqwnrYjH+I/nY/7cA1X5zia4mDJqH36npP7sxGQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
@@ -1459,8 +1459,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  vite@6.3.2:
-    resolution: {integrity: sha512-ZSvGOXKGceizRQIZSz7TGJ0pS3QLlVY/9hwxVh17W3re67je1RKYzFHivZ/t0tubU78Vkyb9WnHPENSBCzbckg==}
+  vite@6.3.3:
+    resolution: {integrity: sha512-5nXH+QsELbFKhsEfWLkHrvgRpTdGJzqOZ+utSdmPTvwHmvU6ITTm3xx+mRusihkcI8GeC7lCDyn3kDtiki9scw==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -1993,7 +1993,7 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@22.14.1':
+  '@types/node@22.15.2':
     dependencies:
       undici-types: 6.21.0
 
@@ -2082,10 +2082,10 @@ snapshots:
       '@typescript-eslint/types': 8.31.0
       eslint-visitor-keys: 4.2.0
 
-  '@vitejs/plugin-react-swc@3.9.0(vite@6.3.2(@types/node@22.14.1)(jiti@1.21.7)(yaml@2.6.1))':
+  '@vitejs/plugin-react-swc@3.9.0(vite@6.3.3(@types/node@22.15.2)(jiti@1.21.7)(yaml@2.6.1))':
     dependencies:
       '@swc/core': 1.11.21
-      vite: 6.3.2(@types/node@22.14.1)(jiti@1.21.7)(yaml@2.6.1)
+      vite: 6.3.3(@types/node@22.15.2)(jiti@1.21.7)(yaml@2.6.1)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -2653,13 +2653,13 @@ snapshots:
       react: 19.1.0
       scheduler: 0.26.0
 
-  react-router-dom@7.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  react-router-dom@7.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
-      react-router: 7.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react-router: 7.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
 
-  react-router@7.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  react-router@7.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       cookie: 1.0.2
       react: 19.1.0
@@ -2860,7 +2860,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite@6.3.2(@types/node@22.14.1)(jiti@1.21.7)(yaml@2.6.1):
+  vite@6.3.3(@types/node@22.15.2)(jiti@1.21.7)(yaml@2.6.1):
     dependencies:
       esbuild: 0.25.2
       fdir: 6.4.4(picomatch@4.0.2)
@@ -2869,7 +2869,7 @@ snapshots:
       rollup: 4.38.0
       tinyglobby: 0.2.13
     optionalDependencies:
-      '@types/node': 22.14.1
+      '@types/node': 22.15.2
       fsevents: 2.3.3
       jiti: 1.21.7
       yaml: 2.6.1
