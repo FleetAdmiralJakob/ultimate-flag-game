@@ -25,7 +25,7 @@ importers:
         version: 19.1.0(react@19.1.0)
       react-router-dom:
         specifier: ^7.0.0
-        version: 7.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        version: 7.7.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@eslint/js':
         specifier: ^9.9.0
@@ -1303,15 +1303,15 @@ packages:
     peerDependencies:
       react: ^19.1.0
 
-  react-router-dom@7.6.1:
-    resolution: {integrity: sha512-vxU7ei//UfPYQ3iZvHuO1D/5fX3/JOqhNTbRR+WjSBWxf9bIvpWK+ftjmdfJHzPOuMQKe2fiEdG+dZX6E8uUpA==}
+  react-router-dom@7.7.1:
+    resolution: {integrity: sha512-bavdk2BA5r3MYalGKZ01u8PGuDBloQmzpBZVhDLrOOv1N943Wq6dcM9GhB3x8b7AbqPMEezauv4PeGkAJfy7FQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
 
-  react-router@7.6.1:
-    resolution: {integrity: sha512-hPJXXxHJZEsPFNVbtATH7+MMX43UDeOauz+EAU4cgqTn7ojdI9qQORqS8Z0qmDlL1TclO/6jLRYUEtbWidtdHQ==}
+  react-router@7.7.1:
+    resolution: {integrity: sha512-jVKHXoWRIsD/qS6lvGveckwb862EekvapdHJN/cGmzw40KnJH5gg53ujOJ4qX6EKIK9LSBfFed/xiQ5yeXNrUA==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
@@ -2700,13 +2700,13 @@ snapshots:
       react: 19.1.0
       scheduler: 0.26.0
 
-  react-router-dom@7.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  react-router-dom@7.7.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
-      react-router: 7.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react-router: 7.7.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
 
-  react-router@7.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  react-router@7.7.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       cookie: 1.0.2
       react: 19.1.0
